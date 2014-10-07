@@ -16,7 +16,7 @@
 
 
 from nova import exception
-from nova.i18n import _
+from nova.openstack.common.gettextutils import _
 from nova.network import linux_net
 from nova.network import manager
 from nova.network import model as network_model
