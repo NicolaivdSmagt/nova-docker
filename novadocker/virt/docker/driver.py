@@ -34,7 +34,7 @@ from nova.openstack.common import fileutils
 from nova.openstack.common import importutils
 from nova.openstack.common import jsonutils
 from nova.openstack.common import log
-from nova.openstack.common import units
+import units
 from nova import utils
 from nova.virt import driver
 from nova.virt import images
