@@ -315,8 +315,8 @@ class DockerDriver(driver.ComputeDriver):
             return
         self.docker.stop_container(container_id)
 
-    def destroy(self, instance, network_info, block_device_info=None,
-            context=None, destroy_disks=True):
+    def destroy(self, context, instance, network_info, block_device_info=None,
+            destroy_disks=True):
         self.soft_delete(instance)
         self.cleanup(context, instance, network_info,
                      block_device_info, destroy_disks)
