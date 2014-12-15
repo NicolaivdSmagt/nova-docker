@@ -43,6 +43,8 @@ class OpenContrailVIFDriver(object):
 
             utils.execute('ip', 'link', 'set', if_remote_name, 'address',
                           vif['address'], run_as_root=True)
+            utils.execute('ip', 'link', 'set', if_remote_name, 'mtu',
+                          '1450', run_as_root=True)
             utils.execute('ip', 'link', 'set', if_remote_name, 'netns',
                           container_id, run_as_root=True)
 
